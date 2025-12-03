@@ -15,9 +15,9 @@ namespace aplicacionTelegrama
             int numPalabras = 0;
             double coste;
             //Leo el telegrama
-            textoTelegrama = txtTelegramas.Text;
+            textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (chkUrgentes.Checked)
+            if (chkUrgente.Checked)
             {
                 tipoTelegrama = 'u';
             }
@@ -54,7 +54,7 @@ namespace aplicacionTelegrama
                     coste = 0;
                 }
             }
-            txtPrecios.Text = coste.ToString() + " euros";
+            txtPrecio.Text = coste.ToString() + " euros";
         }
         /// <summary>
         /// Limpiar los recursos que se estén usando.
@@ -77,21 +77,21 @@ namespace aplicacionTelegrama
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtTelegramas = new System.Windows.Forms.TextBox();
+            this.txtTelegrama = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.chkUrgentes = new System.Windows.Forms.CheckBox();
+            this.chkUrgente = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPrecios = new System.Windows.Forms.TextBox();
-            this.btnCalcularPrecios = new System.Windows.Forms.Button();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.btnCalcularPrecio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtTelegramas
+            // txtTelegrama
             // 
-            this.txtTelegramas.Location = new System.Drawing.Point(42, 39);
-            this.txtTelegramas.Multiline = true;
-            this.txtTelegramas.Name = "txtTelegramas";
-            this.txtTelegramas.Size = new System.Drawing.Size(142, 36);
-            this.txtTelegramas.TabIndex = 0;
+            this.txtTelegrama.Location = new System.Drawing.Point(42, 39);
+            this.txtTelegrama.Multiline = true;
+            this.txtTelegrama.Name = "txtTelegrama";
+            this.txtTelegrama.Size = new System.Drawing.Size(142, 36);
+            this.txtTelegrama.TabIndex = 0;
             // 
             // label1
             // 
@@ -102,15 +102,15 @@ namespace aplicacionTelegrama
             this.label1.TabIndex = 1;
             this.label1.Text = "Texto";
             // 
-            // chkUrgentes
+            // chkUrgente
             // 
-            this.chkUrgentes.AutoSize = true;
-            this.chkUrgentes.Location = new System.Drawing.Point(42, 82);
-            this.chkUrgentes.Name = "chkUrgentes";
-            this.chkUrgentes.Size = new System.Drawing.Size(70, 17);
-            this.chkUrgentes.TabIndex = 2;
-            this.chkUrgentes.Text = "Urgente?";
-            this.chkUrgentes.UseVisualStyleBackColor = true;
+            this.chkUrgente.AutoSize = true;
+            this.chkUrgente.Location = new System.Drawing.Point(42, 82);
+            this.chkUrgente.Name = "chkUrgente";
+            this.chkUrgente.Size = new System.Drawing.Size(70, 17);
+            this.chkUrgente.TabIndex = 2;
+            this.chkUrgente.Text = "Urgente?";
+            this.chkUrgente.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -121,33 +121,33 @@ namespace aplicacionTelegrama
             this.label2.TabIndex = 3;
             this.label2.Text = "Coste:";
             // 
-            // txtPrecios
+            // txtPrecio
             // 
-            this.txtPrecios.Location = new System.Drawing.Point(84, 106);
-            this.txtPrecios.Name = "txtPrecios";
-            this.txtPrecios.Size = new System.Drawing.Size(100, 20);
-            this.txtPrecios.TabIndex = 4;
+            this.txtPrecio.Location = new System.Drawing.Point(84, 106);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.TabIndex = 4;
             // 
-            // btnCalcularPrecios
+            // btnCalcularPrecio
             // 
-            this.btnCalcularPrecios.Location = new System.Drawing.Point(45, 139);
-            this.btnCalcularPrecios.Name = "btnCalcularPrecios";
-            this.btnCalcularPrecios.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcularPrecios.TabIndex = 5;
-            this.btnCalcularPrecios.Text = "Calcular";
-            this.btnCalcularPrecios.UseVisualStyleBackColor = true;
+            this.btnCalcularPrecio.Location = new System.Drawing.Point(45, 139);
+            this.btnCalcularPrecio.Name = "btnCalcularPrecio";
+            this.btnCalcularPrecio.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcularPrecio.TabIndex = 5;
+            this.btnCalcularPrecio.Text = "Calcular";
+            this.btnCalcularPrecio.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(213, 190);
-            this.Controls.Add(this.btnCalcularPrecios);
-            this.Controls.Add(this.txtPrecios);
+            this.Controls.Add(this.btnCalcularPrecio);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.chkUrgentes);
+            this.Controls.Add(this.chkUrgente);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtTelegramas);
+            this.Controls.Add(this.txtTelegrama);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -157,12 +157,12 @@ namespace aplicacionTelegrama
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtTelegramas;
+        private System.Windows.Forms.TextBox txtTelegrama;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox chkUrgentes;
+        private System.Windows.Forms.CheckBox chkUrgente;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPrecios;
-        private System.Windows.Forms.Button btnCalcularPrecios;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Button btnCalcularPrecio;
     }
 }
 
